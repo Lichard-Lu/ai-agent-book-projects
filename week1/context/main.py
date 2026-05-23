@@ -13,12 +13,15 @@ import subprocess
 import time
 from typing import Dict, Any, List
 from tabulate import tabulate
+from dotenv import load_dotenv
 try:
     import matplotlib.pyplot as plt
     import numpy as np
     MATPLOTLIB_AVAILABLE = True
 except ImportError:
     MATPLOTLIB_AVAILABLE = False
+
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(
